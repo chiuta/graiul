@@ -1,0 +1,14 @@
+# Good first issues
+
+- [ ] Add 50 proverbs from your own region with `region` filled to county level
+- [ ] Add 20 riddles (ghicitori) with answers in a `answer` field (extend schema)
+- [ ] Add 10 charms (descântece) with a `purpose` field and ethnographic source
+- [ ] Add 10 carols (colinde) — only traditional/public-domain texts
+- [ ] Add Hungarian-in-Romania entries (lang hu, region Transylvania)
+- [ ] Add translations to French for the 50 most common proverbs
+- [ ] Build a map view (region -> items) using a local GeoJSON
+- [ ] Add a 'proverb of the day' static page generator
+- [ ] Add a duplicates detector based on normalised text
+- [ ] Write guidelines on collecting folklore ethically (consent, attribution)
+
+Create them all on GitHub with `scripts/create_issues.sh` (needs the `gh` CLI).
