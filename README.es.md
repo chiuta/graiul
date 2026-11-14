@@ -4,6 +4,8 @@
 
 Versión: 0.1.0 · Última actualización: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > Un archivo abierto de folclore: refranes, conjuros, adivinanzas y villancicos, con región y fuente.
 
 Trade-free: sin rastreo, sin anuncios, sin cuentas, funciona sin conexión.

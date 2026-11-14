@@ -4,6 +4,8 @@
 
 Version: 0.1.0 · Last updated: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > An open archive of folklore: proverbs, charms, riddles and carols, each with region and source.
 
 Trade-free: no tracking, no ads, no accounts, works offline.

@@ -4,6 +4,8 @@
 
 Version: 0.1.0 · Letzte Aktualisierung: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > Ein offenes Folklore-Archiv: Sprichwörter, Zaubersprüche, Rätsel und Lieder – mit Region und Quelle.
 
 Trade-free: kein Tracking, keine Werbung, keine Konten, funktioniert offline.

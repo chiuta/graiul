@@ -4,6 +4,8 @@
 
 Versiune: 0.1.0 · Ultima actualizare: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > O arhivă deschisă de folclor: proverbe, descântece, ghicitori și colinde, fiecare cu regiune și sursă.
 
 Fără comerț (trade-free): fără urmărire, fără reclame, fără conturi, funcționează offline.

@@ -4,6 +4,8 @@
 
 Verzió: 0.1.0 · Utolsó frissítés: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > Nyílt folklórarchívum: közmondások, ráolvasások, találós kérdések és énekek, régióval és forrással.
 
 Trade-free: nincs követés, nincs reklám, nincs fiók, offline is működik.

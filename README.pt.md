@@ -4,6 +4,8 @@
 
 Versão: 0.1.0 · Última atualização: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > Um arquivo aberto de folclore: provérbios, esconjuros, adivinhas e cantigas, com região e fonte.
 
 Trade-free: sem rastreamento, sem anúncios, sem contas, funciona offline.

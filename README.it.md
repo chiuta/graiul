@@ -4,6 +4,8 @@
 
 Versione: 0.1.0 · Ultimo aggiornamento: 2026-11-13
 
+🌐 https://graiul.chiuta.ro
+
 > Un archivio aperto di folklore: proverbi, incantesimi, indovinelli e canti, con regione e fonte.
 
 Trade-free: nessun tracciamento, nessuna pubblicità, nessun account, funziona offline.
