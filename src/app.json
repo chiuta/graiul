@@ -1,0 +1,16 @@
+{
+  "slug": "graiul",
+  "version": "0.2.0",
+  "updated": "2026-11-17",
+  "plugins": null,
+  "data": "data/items",
+  "files": {
+    "COUNTIES": "data/counties.json"
+  },
+  "pwa": {
+    "categories": [
+      "education",
+      "books"
+    ]
+  }
+}

@@ -2,9 +2,8 @@
   "type": "proverb",
   "lang": "ro",
   "text": "Cine se scoală de dimineață, departe ajunge.",
-  "region": "Pan-Romanian",
-  "translations": {
-    "en": "He who rises early goes far."
-  },
-  "source": "traditional (example entry)"
+  "region": "unlocated",
+  "notes": "Also possible: county (RO-IS …), translations ({\"en\": \"…\"}), answer (riddles), purpose + collector + consent (charms), source_url, license, status, reviewed_by.",
+  "source": "traditional (example entry)",
+  "status": "draft"
 }

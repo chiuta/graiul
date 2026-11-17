@@ -1,0 +1,16 @@
+{
+  "name": "graiul",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "An open archive of Romanian folklore: proverbs, charms, riddles and carols, each with region, source and consent.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && python3 scripts/validate.py"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "note": "Schematic tile map, not a geographic map: one tile per county (41 counties and the municipality of București), placed so that neighbours stay roughly where they are. Codes are ISO 3166-2:RO; col and row place the tile in a grid of 9 columns and 8 rows.",
+  "counties": [
+    {
+      "code": "RO-SM",
+      "name": "Satu Mare",
+      "col": 1,
+      "row": 0
+    },
+    {
+      "code": "RO-MM",
+      "name": "Maramureș",
+      "col": 2,
+      "row": 0
+    },
+    {
+      "code": "RO-SV",
+      "name": "Suceava",
+      "col": 4,
+      "row": 0
+    },
+    {
+      "code": "RO-BT",
+      "name": "Botoșani",
+      "col": 6,
+      "row": 0
+    },
+    {
+      "code": "RO-SJ",
+      "name": "Sălaj",
+      "col": 1,
+      "row": 1
+    },
+    {
+      "code": "RO-BN",
+      "name": "Bistrița-Năsăud",
+      "col": 3,
+      "row": 1
+    },
+    {
+      "code": "RO-NT",
+      "name": "Neamț",
+      "col": 5,
+      "row": 1
+    },
+    {
+      "code": "RO-IS",
+      "name": "Iași",
+      "col": 6,
+      "row": 1
+    },
+    {
+      "code": "RO-BH",
+      "name": "Bihor",
+      "col": 0,
+      "row": 2
+    },
+    {
+      "code": "RO-CJ",
+      "name": "Cluj",
+      "col": 1,
+      "row": 2
+    },
+    {
+      "code": "RO-MS",
+      "name": "Mureș",
+      "col": 3,
+      "row": 2
+    },
+    {
+      "code": "RO-BC",
+      "name": "Bacău",
+      "col": 6,
+      "row": 2
+    },
+    {
+      "code": "RO-AR",
+      "name": "Arad",
+      "col": 0,
+      "row": 3
+    },
+    {
+      "code": "RO-AB",
+      "name": "Alba",
+      "col": 2,
+      "row": 3
+    },
+    {
+      "code": "RO-HR",
+      "name": "Harghita",
+      "col": 4,
+      "row": 3
+    },
+    {
+      "code": "RO-VS",
+      "name": "Vaslui",
+      "col": 7,
+      "row": 3
+    },
+    {
+      "code": "RO-TM",
+      "name": "Timiș",
+      "col": 0,
+      "row": 4
+    },
+    {
+      "code": "RO-HD",
+      "name": "Hunedoara",
+      "col": 1,
+      "row": 4
+    },
+    {
+      "code": "RO-SB",
+      "name": "Sibiu",
+      "col": 2,
+      "row": 4
+    },
+    {
+      "code": "RO-BV",
+      "name": "Brașov",
+      "col": 4,
+      "row": 4
+    },
+    {
+      "code": "RO-CV",
+      "name": "Covasna",
+      "col": 5,
+      "row": 4
+    },
+    {
+      "code": "RO-VN",
+      "name": "Vrancea",
+      "col": 6,
+      "row": 4
+    },
+    {
+      "code": "RO-GL",
+      "name": "Galați",
+      "col": 7,
+      "row": 4
+    },
+    {
+      "code": "RO-CS",
+      "name": "Caraș-Severin",
+      "col": 0,
+      "row": 5
+    },
+    {
+      "code": "RO-GJ",
+      "name": "Gorj",
+      "col": 1,
+      "row": 5
+    },
+    {
+      "code": "RO-VL",
+      "name": "Vâlcea",
+      "col": 2,
+      "row": 5
+    },
+    {
+      "code": "RO-AG",
+      "name": "Argeș",
+      "col": 3,
+      "row": 5
+    },
+    {
+      "code": "RO-PH",
+      "name": "Prahova",
+      "col": 5,
+      "row": 5
+    },
+    {
+      "code": "RO-BZ",
+      "name": "Buzău",
+      "col": 6,
+      "row": 5
+    },
+    {
+      "code": "RO-BR",
+      "name": "Brăila",
+      "col": 7,
+      "row": 5
+    },
+    {
+      "code": "RO-TL",
+      "name": "Tulcea",
+      "col": 8,
+      "row": 5
+    },
+    {
+      "code": "RO-MH",
+      "name": "Mehedinți",
+      "col": 1,
+      "row": 6
+    },
+    {
+      "code": "RO-DB",
+      "name": "Dâmbovița",
+      "col": 4,
+      "row": 6
+    },
+    {
+      "code": "RO-IF",
+      "name": "Ilfov",
+      "col": 5,
+      "row": 6
+    },
+    {
+      "code": "RO-B",
+      "name": "București",
+      "col": 6,
+      "row": 6
+    },
+    {
+      "code": "RO-IL",
+      "name": "Ialomița",
+      "col": 7,
+      "row": 6
+    },
+    {
+      "code": "RO-CT",
+      "name": "Constanța",
+      "col": 8,
+      "row": 6
+    },
+    {
+      "code": "RO-DJ",
+      "name": "Dolj",
+      "col": 1,
+      "row": 7
+    },
+    {
+      "code": "RO-OT",
+      "name": "Olt",
+      "col": 3,
+      "row": 7
+    },
+    {
+      "code": "RO-TR",
+      "name": "Teleorman",
+      "col": 4,
+      "row": 7
+    },
+    {
+      "code": "RO-GR",
+      "name": "Giurgiu",
+      "col": 5,
+      "row": 7
+    },
+    {
+      "code": "RO-CL",
+      "name": "Călărași",
+      "col": 6,
+      "row": 7
+    }
+  ]
+}

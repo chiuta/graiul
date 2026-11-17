@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "slug": "graiul",
+  "name": "GRAIUL — An open archive of folklore: proverbs, charms, riddles and carols, each with region and source",
+  "version": "0.2.0",
+  "updated": "2026-11-17",
+  "description": "An open archive of folklore: proverbs, charms, riddles and carols, each with region and source",
+  "egress": [],
+  "permissions": [
+    "clipboard",
+    "serviceWorker",
+    "localStorage",
+    "WebGL"
+  ],
+  "storageKeys": [
+    "graiul.state"
+  ],
+  "sizeBytes": 461768,
+  "sha256": "b1dc7a0d89b4e4448f33b35cfdb17f0d3fbef6070ed3f79534f6b843e16ab666",
+  "csp": {
+    "present": true,
+    "directives": {
+      "default-src": "'none'",
+      "script-src": "sha256×7",
+      "style-src": "sha256×3",
+      "img-src": "'self' data:",
+      "base-uri": "'none'",
+      "form-action": "'none'",
+      "manifest-src": "'self'",
+      "worker-src": "'self'"
+    },
+    "scriptInline": "hash",
+    "connect": "'none'"
+  },
+  "features": {
+    "export": true,
+    "import": true,
+    "i18n": [
+      "ro",
+      "en",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "hu",
+      "de"
+    ],
+    "pwa": {
+      "manifest": true,
+      "serviceWorker": true
+    },
+    "modules": [
+      "core",
+      "store",
+      "view",
+      "a11y",
+      "share"
+    ]
+  },
+  "kit": {
+    "version": "1.8.0",
+    "modules": [
+      "core",
+      "store",
+      "view",
+      "a11y",
+      "share"
+    ]
+  },
+  "selfSerializing": false
+}

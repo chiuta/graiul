@@ -1,50 +1,39 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GRAIUL item",
+  "description": "One proverb, charm, riddle, carol, tale, saying or lullaby with its region and source. One item per file in data/items/, named <lang>-<first words>.json (scripts/validate.py checks the name).",
   "type": "object",
-  "required": [
-    "type",
-    "lang",
-    "text",
-    "region",
-    "source"
-  ],
+  "additionalProperties": false,
+  "required": ["type", "lang", "text", "region", "source"],
   "properties": {
-    "type": {
-      "enum": [
-        "proverb",
-        "charm",
-        "riddle",
-        "carol",
-        "tale",
-        "saying",
-        "lullaby"
-      ]
-    },
-    "lang": {
-      "type": "string",
-      "pattern": "^[a-z]{2,3}$"
-    },
-    "text": {
-      "type": "string",
-      "minLength": 1
-    },
-    "region": {
-      "type": "string",
-      "minLength": 1
-    },
+    "type": { "enum": ["proverb", "charm", "riddle", "carol", "tale", "saying", "lullaby"] },
+    "lang": { "type": "string", "pattern": "^[a-z]{2,3}$", "description": "ISO 639-1 or 639-3 code of the text" },
+    "text": { "type": "string", "minLength": 1, "maxLength": 20000, "pattern": "^[^\\u0000-\\u0009\\u000b-\\u001f\\u007f]*$", "description": "The item as it is said; line breaks allowed" },
+    "region": { "type": "string", "minLength": 1, "maxLength": 80, "pattern": "^[^\\u0000-\\u001f\\u007f]*$", "description": "Historical region (Moldova, Transilvania, Maramureș …), or 'unlocated' when the place of collection is not known" },
+    "county": { "enum": ["RO-AB", "RO-AR", "RO-AG", "RO-BC", "RO-BH", "RO-BN", "RO-BT", "RO-BV", "RO-BR", "RO-B", "RO-BZ", "RO-CS", "RO-CL", "RO-CJ", "RO-CT", "RO-CV", "RO-DB", "RO-DJ", "RO-GL", "RO-GR", "RO-GJ", "RO-HR", "RO-HD", "RO-IL", "RO-IS", "RO-IF", "RO-MM", "RO-MH", "RO-MS", "RO-NT", "RO-OT", "RO-PH", "RO-SJ", "RO-SM", "RO-SB", "RO-SV", "RO-TR", "RO-TM", "RO-TL", "RO-VS", "RO-VL", "RO-VN"], "description": "ISO 3166-2:RO code of the county where it was collected" },
     "translations": {
       "type": "object",
-      "additionalProperties": {
-        "type": "string",
-        "minLength": 1
-      }
+      "minProperties": 1,
+      "maxProperties": 12,
+      "propertyNames": { "pattern": "^[a-z]{2,3}$" },
+      "additionalProperties": { "type": "string", "minLength": 1, "maxLength": 20000, "pattern": "^[^\\u0000-\\u0009\\u000b-\\u001f\\u007f]*$" }
     },
-    "collector": {
-      "type": "string"
-    },
-    "source": {
-      "type": "string",
-      "minLength": 1
-    }
-  }
+    "answer": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "^[^\\u0000-\\u001f\\u007f]*$", "description": "Riddles only: the answer" },
+    "purpose": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "^[^\\u0000-\\u001f\\u007f]*$", "description": "Charms only: what it is said for, in a few words (not medical advice)" },
+    "notes": { "type": "string", "minLength": 1, "maxLength": 500, "pattern": "^[^\\u0000-\\u0009\\u000b-\\u001f\\u007f]*$" },
+    "collector": { "type": "string", "minLength": 1, "maxLength": 120, "pattern": "^[^\\u0000-\\u001f\\u007f]*$", "description": "Who collected it from a living person; then 'consent' is required" },
+    "consent": { "enum": ["published", "informed", "anonymised"], "description": "published = taken from a published work (cite it); informed = the bearer agreed to this publication; anonymised = agreed, name withheld" },
+    "source": { "type": "string", "minLength": 1, "maxLength": 300, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
+    "source_url": { "type": "string", "pattern": "^https://[^\\u0000-\\u0020\\u007f-\\u00a0\\u1680\\u2000-\\u200a\\u2028\\u2029\\u202f\\u205f\\u3000\\ufeff]{1,500}$", "description": "An https:// address: no spaces or control characters" },
+    "license": { "enum": ["MIT", "public-domain", "CC0-1.0", "CC-BY-SA-4.0"], "description": "Licence of this item; when absent, the repository licence applies" },
+    "status": { "enum": ["draft", "sourced", "reviewed"] },
+    "reviewed_by": { "type": "string", "minLength": 1, "maxLength": 120, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" }
+  },
+  "allOf": [
+    { "if": { "properties": { "type": { "const": "riddle" } }, "required": ["type"] }, "then": { "required": ["answer"] }, "else": { "not": { "required": ["answer"] } } },
+    { "if": { "properties": { "type": { "const": "charm" } }, "required": ["type"] }, "then": { "required": ["purpose", "consent"] }, "else": { "not": { "required": ["purpose"] } } },
+    { "if": { "required": ["collector"] }, "then": { "required": ["consent"] } },
+    { "if": { "properties": { "status": { "const": "sourced" } }, "required": ["status"] }, "then": { "required": ["source_url"] } },
+    { "if": { "properties": { "status": { "const": "reviewed" } }, "required": ["status"] }, "then": { "required": ["reviewed_by"] } }
+  ]
 }
