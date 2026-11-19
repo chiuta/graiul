@@ -1,6 +1,6 @@
 {
   "name": "graiul",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "An open archive of Romanian folklore: proverbs, charms, riddles and carols, each with region, source and consent.",
