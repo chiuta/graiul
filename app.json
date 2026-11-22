@@ -3,7 +3,7 @@
   "slug": "graiul",
   "name": "GRAIUL — An open archive of folklore: proverbs, charms, riddles and carols, each with region and source",
   "version": "0.2.1",
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "description": "An open archive of folklore: proverbs, charms, riddles and carols, each with region and source",
   "egress": [],
   "permissions": [
@@ -15,8 +15,8 @@
   "storageKeys": [
     "graiul.state"
   ],
-  "sizeBytes": 465274,
-  "sha256": "2b2abb72d7da92344513bc2d7f2acfa7f9504a2951ed2a6335055a82799d80ef",
+  "sizeBytes": 465334,
+  "sha256": "df3183150ffeee7e7a5ff3890625aa9561420df465f1519ac5e1cabafc16841a",
   "csp": {
     "present": true,
     "directives": {
@@ -27,7 +27,8 @@
       "base-uri": "'none'",
       "form-action": "'none'",
       "manifest-src": "'self'",
-      "worker-src": "'self'"
+      "worker-src": "'self'",
+      "upgrade-insecure-requests": "''"
     },
     "scriptInline": "hash",
     "connect": "'none'"
